@@ -20,6 +20,20 @@ class UserSeeder extends Seeder
         |--------------------------------------------------------------------------
         */
 
+        $super = User::updateOrCreate(
+            [
+                'email' => 'superadmin@fcomtzdev.com.mx',
+            ],
+            [
+                'name' => 'Superusuario',
+                'username' => 'Superusuario',
+                'password' => Hash::make('@dminfc0*'),
+                'active' => true,
+                'email_verified_at' => date("Y-m-d H:i:s"),
+                'role_id' => 1
+            ]
+        );
+
         $admin = User::updateOrCreate(
             [
                 'email' => 'admin@admin.com',
@@ -30,7 +44,7 @@ class UserSeeder extends Seeder
                 'password' => Hash::make('@dminfc0*'),
                 'active' => true,
                 'email_verified_at' => date("Y-m-d H:i:s"),
-                'role_id' => 1
+                'role_id' => 2
             ]
         );
 
@@ -50,7 +64,7 @@ class UserSeeder extends Seeder
                 'password' => Hash::make('userfc0*'),
                 'active' => true,
                 'email_verified_at' => date("Y-m-d H:i:s"),
-                'role_id' => 2
+                'role_id' => 3
             ]
         );
     }

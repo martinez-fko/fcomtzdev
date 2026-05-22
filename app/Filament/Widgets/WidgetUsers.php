@@ -21,7 +21,9 @@ class WidgetUsers extends StatsOverviewWidget
                     <div
                         x-data="{
                             count: 0,
-                            target: ' . User::count() . '
+                            target: ' . User::whereHas('role', fn ($q) =>
+                                            $q->where('name', '!=', 'Superusuario')
+                                        )->count() . '
                         }"
                         x-init="
                             let start = 0;

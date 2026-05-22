@@ -22,6 +22,13 @@ class RoleSeeder extends Seeder
         */
 
         $adminRole = Role::updateOrCreate(
+            ['name' => 'Superusuario'],
+            [
+                'description' => 'Acceso Dev',
+            ]
+        );
+
+        $superRole = Role::updateOrCreate(
             ['name' => 'Administrador'],
             [
                 'description' => 'Acceso total al sistema',
@@ -49,6 +56,8 @@ class RoleSeeder extends Seeder
         | Sync permisos
         |--------------------------------------------------------------------------
         */
+
+        $superRole->permissions()->sync($allPermissions);
 
         $adminRole->permissions()->sync($allPermissions);
 
