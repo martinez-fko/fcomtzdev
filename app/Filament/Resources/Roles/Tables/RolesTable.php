@@ -3,6 +3,7 @@
 namespace App\Filament\Resources\Roles\Tables;
 
 use Filament\Actions\BulkActionGroup;
+use Filament\Actions\DeleteAction;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
 use Filament\Tables\Columns\TextColumn;
@@ -26,11 +27,12 @@ class RolesTable
             ])
             ->recordActions([
                 EditAction::make(),
+                DeleteAction::make()->hidden(fn ($record) =>
+                    in_array($record->name, [
+                        'Administrador',
+                    ])
+                ),
             ])
-            ->toolbarActions([
-                BulkActionGroup::make([
-                    DeleteBulkAction::make(),
-                ]),
-            ]);
+            ;
     }
 }

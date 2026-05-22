@@ -47,6 +47,13 @@ class PermissionSeeder extends Seeder
             ]
         );
         Permission::updateOrCreate(
+            ['id' => PermissionsConst::DELETE_USERS],
+            [
+                'name' => 'user.delete',
+                'description' => 'Eliminar usuarios',
+            ]
+        );
+        Permission::updateOrCreate(
             ['id' => PermissionsConst::TOGGLE_USER_ACTIVE],
             [
                 'name' => 'user.active',
@@ -74,6 +81,13 @@ class PermissionSeeder extends Seeder
             [
                 'name' => 'role.edit',
                 'description' => 'Editar roles',
+            ]
+        );
+        Permission::updateOrCreate(
+            ['id' => PermissionsConst::DELETE_ROLES],
+            [
+                'name' => 'role.delete',
+                'description' => 'Eliminar roles',
             ]
         );
     
