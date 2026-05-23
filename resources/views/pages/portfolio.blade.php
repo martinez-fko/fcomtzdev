@@ -73,7 +73,7 @@
                         </span>
                     </div>
 
-                    <a href="https://fcomtzdev.com.mx/"
+                    <a href="https://demo-beutysalon.fcomtzdev.com.mx/"
                         class="mt-6 inline-block
                         px-5 py-3 rounded-xl
                         bg-indigo-600 text-white
