@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Inicio')
+@section('title', 'Desarrollador Web Freelancer en Villahermosa')
 
 @section('content')
 
