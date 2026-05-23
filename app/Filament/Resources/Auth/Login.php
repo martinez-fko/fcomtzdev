@@ -1,7 +1,7 @@
 <?php
 // app/Filament/Auth/Login.php
 
-namespace App\Filament\Auth;
+namespace App\Filament\Resources\Auth;
 
 use Filament\Auth\Pages\Login as BaseLogin;
 use Filament\Forms\Components\TextInput;
