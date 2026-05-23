@@ -108,7 +108,7 @@
                         bg-gray-900 p-8">
 
                         <img
-                            src="{{ asset('images/hero.png') }}"
+                            src="{{ asset('images/Hero.png') }}"
                             alt="Developer"
                             class="rounded-2xl w-full">
                     </div>
