@@ -10,7 +10,7 @@
   <!-- Open Graph -->
   <meta property="og:title" content="@yield('title')">
   <meta property="og:description" content="@yield('description')">
-  <meta property="og:image" content="{{ asset('images/og-dev.jpg') }}">
+  <meta property="og:image" content="{{ asset('images/hero.png') }}">
   <meta property="og:url" content="{{ url()->current() }}">
   <meta property="og:type" content="website">
 
