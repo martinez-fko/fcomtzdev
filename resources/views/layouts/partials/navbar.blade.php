@@ -23,12 +23,12 @@
                     Servicios
                 </a> --}}
 
-                <a href="#portafolio"
+                <a href="{{route('portafolio')}}"
                     class="text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 transition">
                     Portafolio
                 </a>
 
-                <a href="#contacto"
+                <a href="{{route('contact')}}"
                     class="text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 transition">
                     Contacto
                 </a>
@@ -66,19 +66,19 @@
         <div id="mobile-menu"
             class="hidden md:hidden py-4 space-y-4">
 
-            <a href="#inicio" class="block text-gray-700 dark:text-gray-200">
+            <a href="{{route('home')}}" class="block text-gray-700 dark:text-gray-200">
                 Inicio
             </a>
 
-            <a href="#servicios" class="block text-gray-700 dark:text-gray-200">
+            {{-- <a href="#servicios" class="block text-gray-700 dark:text-gray-200">
                 Servicios
-            </a>
+            </a> --}}
 
-            <a href="#portafolio" class="block text-gray-700 dark:text-gray-200">
+            <a href="{{route('portafolio')}}" class="block text-gray-700 dark:text-gray-200">
                 Portafolio
             </a>
 
-            <a href="#contacto" class="block text-gray-700 dark:text-gray-200">
+            <a href="{{route('contact')}}" class="block text-gray-700 dark:text-gray-200">
                 Contacto
             </a>
 
