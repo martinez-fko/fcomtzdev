@@ -41,7 +41,7 @@
                 <!-- Botones -->
                 <div class="mt-8 flex flex-wrap gap-4">
 
-                    <a href="#contacto"
+                    <a href="{{route('contact')}}"
                         class="px-6 py-3 rounded-xl
                         bg-indigo-600 text-white
                         font-medium shadow-lg
@@ -50,7 +50,7 @@
                         Contactarme
                     </a>
 
-                    <a href="#portafolio"
+                    <a href="{{route('portafolio')}}"
                         class="px-6 py-3 rounded-xl
                         border border-gray-300 dark:border-gray-700
                         text-gray-700 dark:text-gray-200
